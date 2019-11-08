@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Front-end{dev} | Vladyslav Popov</title>
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <link href="style.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="navbar.js" defer></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+<header>
+    <div class="menu">
+        <div class="bar">
+            <svg class="ham hamRotate" id="ham" viewBox="0 0 100 100" width="65"
+                 onclick="this.classList.toggle('active')">
+                <path
+                        class="line top"
+                        d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20"/>
+                <path
+                        class="line middle"
+                        d="m 30,50 h 40"/>
+                <path
+                        class="line bottom"
+                        d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20"/>
+            </svg>
+        </div>
+    </div>
+    <div class="overlay"></div>
+    <nav>
+        <ul>
+            <li class="nav_item">
+                <a href="#" class="nav_link" data-text="Front-end{dev}" id="first">Front-end{dev}</a>
+            </li>
+            <li class="nav_item">
+                <a href="#" class="nav_link" data-text="О себе" id="sec">О себе</a>
+            </li>
+            <li class="nav_item">
+                <a href="#" class="nav_link" data-text="Портфолио" id="tr">Портфолио</a>
+            </li>
+            <li class="nav_item">
+                <a href="#" class="nav_link" data-text="Связь" id="four">Связь</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<section class="main" id="section1">
+    <div class="intro">
+        <div class="intro__logo">
+            <a href="index.html">
+                <img class="logo_img" src="./img/logo.png" alt="Logo">
+            </a>
+        </div>
+    </div>
+    <div class="slideDown">
+        <a href="#" id="btn">
+            <img src="./img/down1.png" alt="Down">
+        </a>
+    </div>
+</section>
+<section class="section" id="section2">
+    <div class="bio">
+        <h1>О себе</h1>
+        <h2>Попов Владислав Владимирович</h2>
+        <h3>Начинающий веб-разработчик</h3>
+        <p>
+            <span>Дата рождения:</span> 31 октября 1998 (21 год)
+        </p>
+        <p>
+            <span>Город:</span> Черкассы
+        </p>
+        <p>
+            <span>Незаконченное высшее образование:</span> Черкасский государственный университет (2018-2020),
+            ФИТИС, инженерия программного обеспечения
+        </p>
+        <p>
+            <span>Опыта работы по специальности нет.</span>
+        </p>
+        <p>
+            <span>Языки:</span> Английский - Pre-intermediate
+        </p>
+        <p>
+            <span>Навыки:</span> HTML, CSS, JS (начальный уровень), React (обучение)
+        </p>
+        <p>
+            <span>Качества:</span> Настойчивость, коммуникабельность, уникальность, пунктуальность, отвественность,
+            перпективность, обучаемость, целеустремленность.
+        </p>
+        <p>
+            <span>Знание программ:</span> Навыки работы с графическими редакторами (Adobe Photoshop, Adobe
+            Illustrator). Создания и работа с макетами (Figma). Интегрированная среда разработки (Webstorm).
+            Програмная платформа (Node.js)
+        </p>
+        <div class="logos">
+            <div class="item">
+                <img src="./img/ps.png" alt="Adobe Photoshop" title="Adobe Photoshop">
+            </div>
+            <div class="item">
+                <img src="./img/ai.png" alt="Adobe Illustator" title="Adobe Illustator">
+            </div>
+            <div class="item">
+                <img src="./img/figma.png" alt="Figma" title="Figma">
+            </div>
+            <div class="item">
+                <img src="./img/ws.png" alt="Webstorm" title="WebStorm">
+            </div>
+            <div class="item">
+                <img src="./img/nj.png" alt="Node.js" title="Node.js">
+            </div>
+        </div>
+    </div>
+</section>
+<section class="block_grid" id="section3">
+    <div class="wrapper">
+        <div class="block">
+            <div class="block_inner">
+                Coming soon...
+            </div>
+        </div>
+    </div>
+</section>
+<section class="contact" id="section4">
+    <h1>Связь</h1>
+    <div class="contact_wrapper">
+        <form action="send.php" name="newform" method="post">
+            <div class="input one">
+                <input type="text" name="fio" required class="element">
+                <label>Имя</label>
+                <span class="lowBar"></span>
+            </div>
+            <div class="input two">
+                <input type="text" name="email" required class="element">
+                <span class="lowBar"></span>
+                <label>Email</label>
+            </div>
+            <div class="input three">
+                <textarea name="message" required class="element"></textarea>
+                <span class="lowBar"></span>
+                <label>Сообщение</label>
+            </div>
+            <div class="button_block">
+                <input type="submit" value="Отправить">
+            </div>
+        </form>
+
+    </div>
+    <div class="social">
+        <a href="https://www.facebook.com/vladyslav.popov7" target="_blank" title="Facebook"><img src="./img/facebook.svg" alt="facebook" ></a>
+        <a href="0683008273"><img src="./img/whatsapp.svg" alt="whatsapp" title="Номер телефона"></a>
+        <a href="https://www.instagram.com/vladok.p" target="_blank" title="Instagram"><img src="./img/instagram.svg" alt="istagram"></a>
+        <a href="mailto:vladyslavpopov.work@gmail.com" target="_blank" title="Gmail"><img src="./img/google.svg" alt="Gmail"></a>
+        <a href="https://twitter.com/vladyslav_popov" target="_blank" title="Twitter"><img src="./img/twitter.svg" alt="twitter"></a>
+    </div>
+</section>
+</body>
+</html>
