@@ -543,6 +543,7 @@ nav ul {
         margin: 0;
         padding: 0;
         background: url('./img/bgm.jpg') no-repeat fixed;
+        background-size: cover;
     }
 
     .logo_img {
@@ -636,6 +637,15 @@ nav ul {
         stroke: #000;
     }
 
+    .block_inner {
+        background: url('./img/bgm.jpg') no-repeat fixed;
+        background-size: cover;
+        font-size: 7em;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-align: center;
+    }
+
 }
 
 .black {
@@ -645,13 +655,4 @@ nav ul {
 .white {
     stroke: #fff;
 }
-
-/** { background-color: rgba(255,0,0,.2); }*/
-/** * { background-color: rgba(0,255,0,.2); }*/
-/** * * { background-color: rgba(0,0,255,.2); }*/
-/** * * * { background-color: rgba(255,0,255,.2); }*/
-/** * * * * { background-color: rgba(0,255,255,.2); }*/
-/** * * * * * { background-color: rgba(255,255,0,.2); }*/
-/** * * * * * * { background-color: rgba(255,0,0,.2); }*/
-/** * * * * * * * { background-color: rgba(0,255,0,.2); }*/
-/** * * * * * * * * { background-color: rgba(0,0,255,.2); }*/
+}*/
