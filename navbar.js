@@ -54,5 +54,16 @@ $(".nav_item").click(function (e) {
     $("nav").toggleClass("nav_slide_down")
     $("#ham").toggleClass("active")
     $("hamRotate180").toggleClass("active")
+    $(".slideDown").toggleClass("hidden")
+    $(".intro").toggleClass("hidden")
+    $("form").toggleClass("hidden")
+    $(".social a, img").toggleClass("hidden")
     navbarOpened = 0;
+});
+
+$(".menu").click(function (e) {
+    $(".slideDown").toggleClass("hidden")
+    $(".intro").toggleClass("hidden")
+    $("form").toggleClass("hidden")
+    $(".social a, img").toggleClass("hidden")
 });

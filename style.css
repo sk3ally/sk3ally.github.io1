@@ -37,7 +37,7 @@ body {
     grid-row-start: 2;
     text-align: center;
     width: auto;
-
+    z-index: 5;
 }
 
 .logo_img {
@@ -189,7 +189,6 @@ body {
 .contact_wrapper {
     display: flex;
     flex-direction: column;
-    /*width: 768px;*/
     margin: 0 auto;
     color: #555;
 }
@@ -198,6 +197,7 @@ form {
     display: flex;
     flex-direction: column;
     align-items: center;
+    z-index: 5;
 }
 
 .input {
@@ -305,12 +305,14 @@ input[type=submit] {
     width: 50px;
     height: 50px;
     margin-right: 3em;
+    z-index: 5;
 }
 
 .social img {
     width: 50px;
     height: 50px;
     margin-right: 3em;
+    z-index: 5;
 }
 
 
@@ -396,7 +398,7 @@ header {
     height: 65px;
     position: fixed;
     display: flex;
-    z-index: 100;
+    z-index: 5;
 
 }
 
@@ -542,6 +544,7 @@ nav ul {
         perspective: 75rem;
         overflow: hidden;
         height: 100vh;
+
     }
 
     nav {
@@ -584,11 +587,13 @@ nav ul {
         height: 100vh;
         opacity: 1;
         transform: scaleX(1);
+        z-index: 4;
+
     }
 
-   .element {
-       width: 300px;
-   }
+    .element {
+        width: 300px;
+    }
 
     .social {
         padding: 2em 0 2em 0;
@@ -606,6 +611,11 @@ nav ul {
         width: 40px;
         height: 40px;
         margin-right: 2em;
+    }
+
+    .slideDown.hidden,.intro.hidden,form.hidden,.social a.hidden, .social img.hidden {
+        z-index: 1;
+        opacity: 0;
     }
 
 }
