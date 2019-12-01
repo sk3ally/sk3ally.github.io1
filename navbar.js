@@ -20,19 +20,19 @@ var section4 = $('#section4');
 
 $(window).scroll(function () {
 
-    if ($(this).scrollTop() < section1.height() - 38 && navbarOpened === 0) {
+    if ($(this).scrollTop() < section1.height() - 38 && navbarOpened === 0 && screen.width > 500) {
         $(".line").css({"stroke": "#fff"});
     }
 
-    if ($(this).scrollTop() > section1.height() - 38 && navbarOpened === 0) {
+    if ($(this).scrollTop() > section1.height() - 38 && navbarOpened === 0 && screen.width > 500) {
         $(".line").css({"stroke": "#000"});
     }
 
-    if ($(this).scrollTop() > section1.height() + section2.height() - 38 && navbarOpened === 0) {
+    if ($(this).scrollTop() > section1.height() + section2.height() - 38 && navbarOpened === 0&& screen.width > 500) {
         $(".line").css({"stroke": "#fff"});
     }
 
-    if ($(this).scrollTop() > section1.height() + section2.height() + section3.height() - 38 && navbarOpened === 0) {
+    if ($(this).scrollTop() > section1.height() + section2.height() + section3.height() - 38 && navbarOpened === 0 && screen.width > 500) {
         $(".line").css({"stroke": "#000"});
     }
 });

@@ -41,7 +41,6 @@ body {
 }
 
 .logo_img {
-
     width: 100%;
     padding: 0 25%;
 }
@@ -296,7 +295,7 @@ input[type=submit] {
 }
 
 .social {
-    padding: 4em 0 2em 0;
+    padding: 4em 0 4em 0;
     display: flex;
     justify-content: center;
 }
@@ -343,7 +342,6 @@ input[type=submit] {
     -webkit-user-select: none;
     -ms-user-select: none;
     user-select: none;
-
 }
 
 .hamRotate.active {
@@ -360,7 +358,7 @@ input[type=submit] {
     stroke: #fff;
     stroke-width: 5.5;
     stroke-linecap: round;
-}
+    }
 
 .ham .top {
     stroke-dasharray: 40, 160;
@@ -436,6 +434,7 @@ header .open {
     transform: scaleX(0);
     opacity: 0;
     transition: opacity 1s;
+    z-index: 4;
 }
 
 a {
@@ -445,7 +444,7 @@ a {
 .menu {
     height: 65px;
     position: fixed;
-    z-index: 101;
+    z-index: 999;
     border-radius: 3px;
     cursor: pointer;
 }
@@ -540,6 +539,19 @@ nav ul {
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    body {
+        margin: 0;
+        padding: 0;
+        background: url('./img/bgm.jpg') no-repeat center center fixed;
+        background-size: cover;
+    }
+
+    .logo_img {
+        width: 100%;
+        padding: 0 10%;
+    }
+
+
     header {
         perspective: 75rem;
         overflow: hidden;
@@ -596,7 +608,7 @@ nav ul {
     }
 
     .social {
-        padding: 2em 0 2em 0;
+        padding: 3em 0 3em 0;
         display: flex;
         justify-content: center;
     }
@@ -615,7 +627,14 @@ nav ul {
 
     .slideDown.hidden,.intro.hidden,form.hidden,.social a.hidden, .social img.hidden {
         z-index: 1;
-        opacity: 0;
+    }
+
+    .slideDown {
+        padding-bottom: 40px;
+    }
+
+    .line {
+        stroke: #000;
     }
 
 }
@@ -627,3 +646,13 @@ nav ul {
 .white {
     stroke: #fff;
 }
+
+/** { background-color: rgba(255,0,0,.2); }*/
+/** * { background-color: rgba(0,255,0,.2); }*/
+/** * * { background-color: rgba(0,0,255,.2); }*/
+/** * * * { background-color: rgba(255,0,255,.2); }*/
+/** * * * * { background-color: rgba(0,255,255,.2); }*/
+/** * * * * * { background-color: rgba(255,255,0,.2); }*/
+/** * * * * * * { background-color: rgba(255,0,0,.2); }*/
+/** * * * * * * * { background-color: rgba(0,255,0,.2); }*/
+/** * * * * * * * * { background-color: rgba(0,0,255,.2); }*/
