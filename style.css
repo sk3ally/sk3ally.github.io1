@@ -547,10 +547,20 @@ nav ul {
         padding: 0;
         background-image: url('img/bg.jpg');
         background-repeat: no-repeat;
-        background-position: center;
+        background-position: top !important;
         background-attachment: fixed;
         background-size: 150vh;
 
+    }
+
+    .block_grid {
+        margin: 0;
+        padding: 0;
+        background-image: url('img/bg.jpg');
+        background-repeat: no-repeat;
+        background-position: top !important;
+        background-attachment: fixed;
+        background-size: 150vh;
     }
 
     .logo_img {
