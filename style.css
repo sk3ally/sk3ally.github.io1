@@ -542,8 +542,8 @@ nav ul {
     body {
         margin: 0;
         padding: 0;
-        background: url('./img/bgm.jpg') no-repeat center fixed;
-        background-size: contain;
+        background: url('./img/bgm.jpg') center center fixed;
+        background-size: cover;
     }
 
     .logo_img {
