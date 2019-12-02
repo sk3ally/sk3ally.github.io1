@@ -542,7 +542,7 @@ nav ul {
     body {
         margin: 0;
         padding: 0;
-        background: url('./img/bgm.jpg') center center fixed;
+        background: url('./img/bgm.jpg')no-repeat center center fixed;
         background-size: cover;
     }
 
@@ -638,7 +638,7 @@ nav ul {
     }
 
     .block_inner {
-        background: url('./img/bgm.jpg') no-repeat fixed;
+        background: url('./img/bgm.jpg') no-repeat center center fixed;
         background-size: cover;
         font-size: 7em;
         -webkit-background-clip: text;
