@@ -44,16 +44,6 @@ $(document).ready(function () {
     });
 });
 
-$(document).ready(function () {
-    $("#four").on("click", function (e) {
-        e.preventDefault();
-        let top = $("#section4").offset().top;
-        $("html, body").animate({
-            scrollTop: top
-        }, 150);
-    });
-});
-
 let isScrolling = false;
 
 window.addEventListener("scroll", throttleScroll, false);
