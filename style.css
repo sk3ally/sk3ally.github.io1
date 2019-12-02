@@ -19,7 +19,10 @@ html {
 body {
     margin: 0;
     padding: 0;
-    background: url('./img/bg.jpg') no-repeat center center fixed;
+    background-image: url("img/bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
     background-size: cover;
 }
 
@@ -538,12 +541,15 @@ nav ul {
     }
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+@media screen and (max-device-width: 450px) {
     body {
         margin: 0;
         padding: 0;
-        background: url('./img/bgm.jpg')no-repeat center center fixed;
-        background-size: cover;
+        background-image: url('img/bg.jpg');
+        background-repeat: no-repeat;
+        background-position: top !important;
+        background-attachment: fixed;
+        background-size: 150vh;
 
     }
 
@@ -639,8 +645,11 @@ nav ul {
     }
 
     .block_inner {
-        background: url('./img/bgm.jpg') no-repeat center center fixed;
-        background-size: cover;
+        background-image: url('img/bg.jpg');
+        background-repeat: no-repeat;
+        background-position: top !important;
+        background-attachment: fixed;
+        background-size: 150vh;
         font-size: 7em;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
