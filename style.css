@@ -548,7 +548,6 @@ nav ul {
         background-image: url('img/bg.jpg');
         background-repeat: no-repeat;
         background-position: top !important;
-        background-attachment: fixed;
         background-size: 150vh;
 
     }
@@ -658,7 +657,6 @@ nav ul {
         background-image: url('img/bg.jpg');
         background-repeat: no-repeat;
         background-position: top !important;
-        background-attachment: fixed;
         background-size: 150vh;
         font-size: 7em;
         -webkit-background-clip: text;
