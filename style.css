@@ -547,7 +547,7 @@ nav ul {
         padding: 0;
         background-image: url('img/bg.jpg');
         background-repeat: no-repeat;
-        background-position: top !important;
+        background-position: center;
         background-attachment: fixed;
         background-size: 150vh;
 
